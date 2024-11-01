@@ -1,0 +1,11 @@
+WFS Googleplay Thumbnail Plugin
+- List thumbnail list
+- Edit each thumbnail
+- Add new a thumbnail
+- Delete a thumbnail
+
+Support: 
+- Add to post, page, widget by KEY
+
+Advanced:
+- Choose to add

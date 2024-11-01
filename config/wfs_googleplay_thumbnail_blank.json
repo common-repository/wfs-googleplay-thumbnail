@@ -1,0 +1,25 @@
+{
+	"name": "google play thumbnail draft 01", 
+	
+	"thumbnailsHeight": "300px",
+	
+	"expandPagesContainerMaxHeight": "",
+	
+	"videos": [
+		{
+			"src"	: "//www.youtube.com/embed/EpnERlsfBFc",
+			"width"	: "600",
+			"height": "400",
+			"videoThumbnail"	: "/wp-content/plugins/wfs_googleplay_thumbnail/assets/images/wfs-image-video.png",
+			"autoHide": false,
+			"autoPlay": false
+		} 
+	],
+	
+	"images": [
+		{
+			"large": "/wp-content/plugins/wfs_googleplay_thumbnail/assets/images/wfs-image.png",
+			"small": "/wp-content/plugins/wfs_googleplay_thumbnail/assets/images/wfs-image-small.png"
+		} 
+	]	
+}

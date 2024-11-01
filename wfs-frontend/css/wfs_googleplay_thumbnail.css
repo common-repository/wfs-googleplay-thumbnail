@@ -1,0 +1,328 @@
+/*****
+ * wfs_googleplay_thumbnail.css - CSS file for WFS GooglePlay Thumbnail script
+ * @version: 1.0 (2013-09-18)
+ * @author: WEBFACESCRIPT
+ * @website: http://webfacescript.com
+*****/
+
+body {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+} 
+.wfs-clickable {
+    cursor: pointer;
+}
+.wfs-play-action-container {
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+.wfs-play-action-container .wfs-play-action {
+    display: block;
+    height: 48px;
+    left: -24px;
+    position: relative;
+    top: -24px;
+    width: 48px;
+}
+.wfs-play-click-target {
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+/*    position: absolute;	*/
+    right: 0;
+    top: 0;
+}
+.wfs-play-action {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAChklEQVRo3u3Zy29NURTH8dYjoSUaaTpkSpCYlpEgFQw6QATR+hsaSWNoQBoRBjWSeCQm6IBQhAiaemsHpkyEiVFbj9J4fExWkxsD9/R0n94rOTvZk3vO/u39PXvttddatwEN/3NvKAFKgBKgBCgB6gVgHtajC2dwF8/xAvfQjwNYh8Z6AmhBN+5jUvX2JeAOYFmtATrxsmJx7zGAI/GsI3pn/DYQ70y3Z9hZC4AlOIlfsZBXOIS2DGPb4t2RGPsTfWiaK4DluBaTj6Mn5+RNMXY8tK6GORYKsLRi8W+wIcEZ2hBacAXNRQE04nTF4tck9GBrKiD6igLYhqnY8vYCfHp7aH/DltQAzXgaX6inyi7NBqIn5niS1ZSyCneH8Eh4oH+dkQtxoeX1btPeaV8qgIV4GKLdGXZqInpvFdhqH+sO5qcAWI+vcQG1ZgD4WHFRDWPjDAFaY65PWJ0CoCsWM5DxrHz8K3T4Hp6ldQYQA1nNKItYf4j15gSYbq+xIyNAb4w5kQLgToh1zhIAfuMcVmaIseBGCoDhEOtIADDdPlRxCB3x3sN6BXiXEeBBPZrQWazIaELX6+kQj9bqEKdwo8dyutG9KQDWRRqY9yJrz3mRTWBVCoAFke/OJJQYx+FZhhK3UoUSDTg4g2DufOxa3mBuNObakzqcfjKH4fQQFqdOaDZHslF0QjOJTUXlxH0FppRvQ/tokUl9cyTeRSX1F7Go0LLK2NhYCy4nLKtMhNalcAJzUthqwnH8qPBOeQtbU2E2i9SgtLgdj2dRWhzC1loXd5dE5nQbnzNEohO4iV15y4lFldcbsRb7cQqDeBQx/WB4sN1ZwoPyD44SoAQoAUqAEiBr/wOXzeq90LA7BgAAAABJRU5ErkJggg==") repeat scroll 0 0 transparent;
+    height: 48px;
+    transition: all 0.25s ease 0s;
+    width: 48px;
+} 
+.wfs-details-section {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    /*background-color: #F5F5F5;*/
+    display: block;
+    overflow: hidden;
+    padding: 19px 50px 0 248px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}  
+.wfs-details-section img{
+	vertical-align: middle;
+}
+.wfs-details-section:hover .wfs-expand-button .wfs-arrow-image {
+    opacity: 0; 
+}
+.wfs-details-section:hover .wfs-expand-button .wfs-play-button {
+    opacity: 1;
+}
+.wfs-details-section-contents {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 100%;
+} 
+.wfs-details-section.wfs-screenshots {
+    overflow: hidden;
+    padding: 0 50px 0 50px; 
+    position: relative;
+}
+.wfs-details-section.wfs-screenshots .wfs-expand-page {
+    text-align: center;
+}
+.wfs-details-section.wfs-screenshots .wfs-thumbnails {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    height: 349px;
+    overflow: hidden;
+    padding: 32px 0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+.wfs-details-section.wfs-screenshots .wfs-thumbnails .wfs-screenshot {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    height: 100%;
+    margin: 0 10px 40px 0;
+    vertical-align: top;
+}
+.wfs-details-section.wfs-screenshots .wfs-full-screenshot {
+    box-sizing: border-box;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-box-sizing: border-box;
+    -ms-user-select: none;
+    -o-box-sizing: border-box;
+    -o-user-select: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 5px; 
+}
+.wfs-screenshot-container {
+    height: 100%;
+}
+.wfs-screenshot-align {
+    display: table;
+    height: 100%;
+}
+.wfs-screenshot-align-inner {
+    display: table-cell;
+    vertical-align: middle; 
+}
+.wfs-details-section.screenshots .wfs-expand-close {
+    top: 20px;
+}
+.wfs-details-trailer {
+    display: inline;
+    margin-right: 7px;
+    position: relative;
+}
+.wfs-details-trailer .wfs-play-click-target {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+}
+.wfs-screenshots .wfs-details-trailer, .wfs-details-trailer .wfs-video-image {
+    height: 100%;
+}
+.wfs-expandable {
+    margin-left: -50px;
+    overflow: hidden;
+    padding: 0 50px;
+    position: relative;
+    width: 100%;
+}
+.wfs-expand-pages-container {
+    overflow: visible !important;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+	height: 353px; 
+	margin-left: 5px;
+}
+.wfs-expand-page {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    white-space: nowrap;
+	width: 100%;
+	height: 100%;
+}
+.wfs-expand-page.wfs-scrollbar { 
+	position:relative; 
+	margin:0px auto; 
+	padding:0px; 
+	overflow: hidden; 
+} 
+.wfs-expand-page.wfs-scrollbar .wfs-thumbnails{
+	width: auto;
+}
+.wfs-expandable .wfs-expand-button {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    bottom: 60px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    width: 38px;
+}
+.wfs-expand-next.wfs-expand-button {
+    right: 8px;
+}
+.wfs-expand-prev.wfs-expand-button {
+    left: 7px;
+}
+.wfs-expand-button .wfs-play-button, .wfs-expand-button .wfs-arrow-image {
+    position: absolute;
+    transition: all 0.25s ease 0s;
+}
+.wfs-expand-button .wfs-play-button {
+    height: 100%;
+    left: 0;
+    min-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    top: 0;
+    width: 100%;
+}
+.wfs-play-button {
+    box-sizing: border-box;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    -moz-user-select: none;
+    -webkit-box-sizing: border-box;
+    -webkit-user-select: none;
+    -ms-box-sizing: border-box;
+    -ms-user-select: none;
+    -o-box-sizing: border-box;
+    -o-user-select: none;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    color: #737373;
+    cursor: default;
+    display: inline-block;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    height: 36px;
+    line-height: 34px;
+    min-width: 40px;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.wfs-play-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.27);
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.27);
+    color: #333333;
+    cursor: default;
+} 
+.wfs-expand-button .wfs-arrow-image {
+    opacity: 1;
+    top: 20px;
+}
+.wfs-expand-button .wfs-button-image-wrapper, .wfs-expand-button .wfs-arrow-image-wrapper {
+    position: absolute;
+    top: 50%;
+}
+.wfs-expand-button .wfs-button-image, .wfs-expand-button .wfs-arrow-image {
+    height: 76px;
+    opacity: 0.5;
+    position: relative;
+    top: -47px;
+    transition: opacity 0.2s ease 0s;
+    width: 64px;
+}
+.wfs-expand-next .wfs-button-image, .wfs-expand-next .wfs-arrow-image {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABmElEQVR42u3bQW3DQBRFUUMolEomUAiFECiFUAiBEAiGEAiFUAauLXlVNY3nz59Unh5Ld5Fd9I4UOxNlmOd50N9lBAAABACAAAAQAAACAEAAAAgAAAEAIAAABACAAAAQAAACAEA9A4zj+LQ0Lc1L1/X1UHEBKAc4b+PPGQgAygGmbwBVCADKAU4/AIQRAJS+oeXKRAAQAMhEABAEyEIAUAGwIbzXIACoBNgQzlEEAAkANQgAkgCiCAASASIIAJIBShEANAAoQQDQCGAvAoCGAHsQADQGODpCFwBHRugG4KgIXQHcQbgAeAzA8w2ACUD7j6B1/M8bACcAbW/Chxu/p8fQQ47fyxexw47fw1HEr+M7imh7GHd3fACNAPaOD6ABQMn4AJIBSscHkAgQGR9AEkB0fAAJADXjA6gE2P6s8REdH0AFwDb+tWZ8AEGArPEBBMocH0AM4JI1PoAYwJQ1PoAYwGvW+ADiN+GXpbcVo/Y3YgACAEAAAAgAAAEAIAAABACAAAAQAAAAjAAAgAAAEAAAAgBAAP5RX5XegI/XghKPAAAAAElFTkSuQmCC") repeat scroll 0 0 transparent;
+    left: -29px;
+}
+.wfs-expand-button:hover .wfs-button-image, .wfs-expand-button:hover .wfs-arrow-image {
+    opacity: 1;
+}
+.wfs-expand-prev .wfs-button-image, .wfs-expand-prev .wfs-arrow-image {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAABkklEQVR42u3bUW2DUBiG4UqYlCUYmIRKqJRJmIRKqAQkVMIkzAGDZb1ZQin/+Q8rJw/Je0HC1fekOS1JD8MwHPR/GQEAAAEAIAAABACAAAAQAAACAEAAAAgAAAEAIAAABACAAABQ6wBZV9d1L2PXsWGsn+4BbATwZ/xbZwAbAMyM//MpAFAZ4M74UycAFQH2Nn5TAHscvxmAvY7fBMDC+B/TMwAqASyMf749B6ACwKPjA6gAsGZ8AMkAa8cHkAgQGR9AEkB0fAAJACXjAygEKB0fQAFAxvgAggBZ4wMIlDk+gBjAJWt8ADGAfgbgFcA2AKcZgK8IAoDYIZyGACD+NTQFAUDZD7FiBADlryKKEADkvIwLIwBIAChBAJAEEEUAkAgQQQCQDLAWAUAFgDUIACoBPIoAoCLAAsLnM/4pozmABYTrMyM0A7BXhKYA9ojQHMACwgXABgB3EHoAGwHMIBwBbAjwi3Acex97cwgLAAABACAAAAQAgAAAAGAEAAAEAIAAABAAAAIAQAAACAAAAWi8b1tSVrkYyePRAAAAAElFTkSuQmCC") repeat scroll 0 0 transparent;
+    left: -32px;
+}
+.wfs-expand-close.wfs-play-button {
+    height: 36px;
+    min-width: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    width: 38px;
+}
+.wfs-expand-close .wfs-close-image {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABEklEQVR42u3X0QmDMBSFYUdwFMEFOkJHyAiO0hEySkdwlGyQXsWIpJo20Ifm3r9woGIQz0cStYsxdpZjujwAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/OKClb9xHGdJXzg/SILELccaAeIVwlJ6O5/itAK8Icj/KSu/RjPAjiDxZ+W1z4CUcFVe8x7wKT6Ntwjgj+PNAeTjmQHsATYBzD8FUu5/D7DcZGWpvgasiRkgpR7fAtTOmGaWgJR7WgfoC6+1+gEO3/LmAYLVJTCYXQKF8kE9QKG83zbGWTvAWfkpezrMmgHc2Tt8tjnuCFr3ALfNhFvhG2BFUAfQWgAAAAAAAAAAAAAAAAAAAAAAAAAAAADAWF53nXCX5oaAJAAAAABJRU5ErkJggg==") repeat scroll 0 0 / contain transparent;
+    height: 42px;
+    left: -2px;
+    position: relative;
+    top: -3px;
+    width: 42px;
+}
+.wfs-expand-loading {
+    background: url("loading_dark_small.gif") repeat scroll 0 0 transparent;
+    height: 40px;
+    position: absolute;
+    right: 7px;
+    top: 30px;
+    width: 40px;
+} 
+.wfs-modal-dialog-overlay {
+    background-color: #FFFFFF;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 20000;
+}
+.wfs-modal-dialog {
+    background-color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 20px 1px #999999;
+    position: absolute;
+    z-index: 20001;
+}
+.wfs-modal-dialog-overlay.wfs-video-preview {
+    background-color: #000000;
+    opacity: 0.75;
+}
+.wfs-modal-dialog.wfs-video-preview {
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    box-shadow: 0 0 0;
+}
